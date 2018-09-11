@@ -1,20 +1,21 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-   <head>
-        <title> Chase's Protfolio</title>
-
-        <style>
+    <head> 
+    <title>Chase's Portfolio</title>
+    <style type="text/css">
             body {
-            
-    background-image: url("http://www.qygjxz.com/data/out/18/5200650-background-images.png");
+                 background-image: url("http://www.qygjxz.com/data/out/18/5200650-background-images.png");
     background-repeat: repeat-x;
-    padding: 10px;
-
+    
+                padding: 10px;
                 font-family: arial;
             }
             header {
                 font-size: 1.5em;
                 font-weight: bold;
+            }
+            h1 {
+                margin: 10px;
             }
             #all-contents {
                 max-width: 800px;
@@ -53,45 +54,53 @@
                 background: rgb(245, 238, 219);
                 display: flex;
             }
-            .sidebar {
-                margin-right: 25px;
-                padding: 10px;
-            }
-            .sidebar img {
-                width: 200px;
-            }
             .content {
                 flex: 1;
                 padding: 15px;
             }
-            .interests header {
-                font-size: 1.25em;
+             /* portfolio styles */
+            #portfolio {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            
+            #portfolio li {
+                background: #fff;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+            
+            #portfolio li:hover {
+                background: #eee;
+            } 
+            
+            #portfolio a {
+                text-decoration: none;
+                color: #454545;
             }
         </style>
     </head>
-    
-    <body>
-        <div id="all-contents">
-            <nav>
-                <header>
-                    Chase's Protfolio
-                </header>
-                <ul>
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="Prorfolio.html">Portfolio</a></a></li>
-                </ul> 
-            </nav>
-            <main>
-                <div class="sidebar">
-                </div>
-                
-                <div class="content">
-                    <header> Protfolio
-                    </header>
-                </div>
-            </main>
-        </div>
-    </body>
-    
 
+    <body>
+      <div id="all-contents">
+      
+      </div>
+       <nav>
+            <header>Chase's Portfolio</header>
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="Portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+        </nav>
+          <main>
+            <div class="content">
+                <h1>Portfolio</h1>
+                <ul id="portfolio">
+                </ul>
+            </div>
+        </main>
+    </body>
 </html>

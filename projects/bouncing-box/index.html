@@ -53,17 +53,30 @@
 			var position;
 			var points;
 			var speed;
+			var direction;
+			
+			
 			
 			position = 0;
 			points = 0;
 			speed = 10;
+			direction =1;
 			
 			
 			var update = function() {
-				position = position + speed;
+				position = position + (speed * direction);
 				if(position > boardWidth) {
-					position = -1;
+					direction = -1;
 				}
+				
+				if(position < 0) {
+					direction = 1;
+				}
+					
+				
+					
+				
+				
 				box.css('left', position);
 				box.text(points);
 				// TODO 3 / 6 / 7 / 8
